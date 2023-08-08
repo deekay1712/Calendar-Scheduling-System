@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>sudo cal</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body
+    class="bg-black h-screen w-full flex justify-center items-center text-white"
+  >
+    <div
+      id="notif"
+      class="fixed top-2 font-bold text-sm opacity-0 z-30 w-max max-w-[90%] flex rounded-lg -translate-x-1/2 left-1/2
+      overflow-hidden transition-all duration-100 px-4 py-2"
+    ></div>
+    <div
+      id="container"
+      class="flex flex-col items-center gap-6 p-10 border-2 border-[#303030] rounded-lg"
+    >
+      <label
+        class="bg-green-500 rounded-sm active:bg-green-900 cursor-pointer font-bold w-40 h-12 flex items-center justify-center"
+        for="file"
+        >Upload File</label
+      >
+      <input type="file" name="file" id="file" class="hidden" />
+      <button
+        id="submit"
+        class="font-bold cursor-pointer active:bg-red-900 rounded-sm bg-red-500 w-40 h-12 flex items-center justify-center"
+        type=""
+      >
+        Send Invites
+      </button>
+    </div>
+  </body>
+</html>
