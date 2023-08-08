@@ -12,14 +12,17 @@ Welcome to the Calendar Scheduling System! This application allows users to uplo
 - Send email notifications to invitees with iCal invite.
 - User-friendly web interface for easy interaction.
 
-## Technologies Used
+## Technologies / Libraries Used
 
 - Node.js
 - Express.js
 - HTML
 - Tailwind CSS
-- [Nodemailer](https://nodemailer.com/about/) for sending email notifications
+- [Nodemailer](https://nodemailer.com/about/) for sending email notifications.
 - [iCal](https://www.npmjs.com/package/ical-generator) for creating iCal calendars.
+- [csv-parser](https://www.npmjs.com/package/csv-parser) to convert CSV file to JSON.
+- [express-fileupload](https://www.npmjs.com/package/express-fileupload) express middleware to allow file upload.
+
 
 ## Getting Started
 
@@ -36,13 +39,13 @@ Follow these steps to set up and run the project locally:
    $ cd server
    $ npm i
    ```
-3. Create .env file in /server
+3. Create .env file in `/server`
    ```
    SMTP_USER=Enter_Mail_Id
    SMTP_PASS=Enter_SMTP_PASSWORD
    ```
-4. Go to /server dir and run.
+4. Go to `/server` dir and run.
    ```
    $ npm run dev
    ```
-5. Open index.html from /client dir.
+5. Open index.html from `/client` dir.
