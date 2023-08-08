@@ -3,7 +3,6 @@ import dotenv from "dotenv";
 import fileUpload from "express-fileupload";
 import csv from "csv-parser";
 import cors from 'cors';
-import { corsOptions } from './configs/corsOptions.js';
 import { sendMail } from "./mailer.js";
 import { bufferToStream, createInvite, getDateObj } from "./utils.js";
 
@@ -13,7 +12,8 @@ dotenv.config();
 const app = express();
 
 // middleware
-app.use(cors(corsOptions));
+// allow all origins
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));  
 app.use(fileUpload());
