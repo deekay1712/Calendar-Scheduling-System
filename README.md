@@ -2,6 +2,9 @@
 
 Welcome to the Calendar Scheduling System! This application allows users to upload a CSV file with meeting details and sends calendar invites to the listed invitees.
 
+## Demo
+[Video](https://drive.google.com/file/d/16aj6Z0iMSAidDEPYFdTcZQMCYWLYLMNV/view?usp=sharing)
+
 ## Features
 
 - Upload a CSV file containing meeting details (topic description, date, time, comma separated invitees).
